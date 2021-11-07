@@ -1,7 +1,7 @@
 name: test ci flow
 on: [push]
 jobs:
-  check-bats-version:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -10,3 +10,12 @@ jobs:
           node-version: '14'
       - run: npm i
       - run: npm run test
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm i
+      - run: npm start
