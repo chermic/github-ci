@@ -1,8 +1,5 @@
 name: work with artifacts
-on:
-  push:
-    branch:
-     - $default-branch
+on: [pull-request]
 jobs:
   tests:
     runs-on: ubuntu-latest

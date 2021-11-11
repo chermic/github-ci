@@ -1,5 +1,5 @@
 name: matrix strategy test
-on: [push]
+on: [pull-request]
 jobs:
   run-tests-on-different-node-version:
     runs-on: ubuntu-latest
