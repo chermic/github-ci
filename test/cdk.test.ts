@@ -5,7 +5,7 @@ import * as Cdk from '../lib/guthub-ci.stack';
 test.skip('Empty Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new Cdk.GithubCiStack(app, 'MyTestStack');
+    const stack = new Cdk.CdkStack(app, 'MyTestStack');
     // THEN
     expectCDK(stack).to(matchTemplate({
       "Resources": {}
