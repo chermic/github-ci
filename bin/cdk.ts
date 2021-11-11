@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { GithubCiStack } from '../lib/cdk-stack';
+import { GithubCiStack } from '../lib/guthub-ci.stack';
 
 const app = new cdk.App();
 new GithubCiStack(app, 'CdkStack', {
